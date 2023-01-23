@@ -59,6 +59,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.nuget.newtonsoft-json": {
       "version": "2.0.0",
       "depth": 1,
@@ -66,6 +67,8 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.services.core": {
       "version": "1.0.1",
       "depth": 1,
@@ -83,12 +86,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.subsystemregistration": {
+<<<<<<< Updated upstream
       "version": "1.1.0",
       "depth": 2,
+=======
+      "version": "1.0.6",
+      "depth": 1,
+>>>>>>> Stashed changes
       "source": "registry",
-      "dependencies": {
-        "com.unity.modules.subsystems": "1.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
@@ -173,6 +179,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.xr.oculus": {
       "version": "1.11.2",
       "depth": 0,
@@ -197,6 +204,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
