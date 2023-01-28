@@ -8,6 +8,7 @@ public class QuizManager : MonoBehaviour
   public List<QuestionsAndAnswers> QnA;
   public GameObject[] options;
   public int currentQuestion;
+  public int score = 0;
 
   public Text QuestionTxt;
 
@@ -44,4 +45,15 @@ public class QuizManager : MonoBehaviour
     SetAnswers();
 
   }  
+
+  public void addPoints()
+  {
+    score += 1;
+    Debug.Log("goedzo! je score is:" + score);
+  }
+
+  public void noPoints()
+  {
+    Debug.Log("fout antwoord");
+  }
 }
