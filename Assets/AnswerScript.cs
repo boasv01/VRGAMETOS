@@ -11,13 +11,11 @@ public class AnswerScript : MonoBehaviour
     {
         if(isCorrect)
         {
-            Debug.Log("Correct Answer");
             quizManager.correct();
             quizManager.addPoints();
         }
         else
         {
-            Debug.Log("Wrong Answer");
             quizManager.correct();
             quizManager.noPoints();
         }

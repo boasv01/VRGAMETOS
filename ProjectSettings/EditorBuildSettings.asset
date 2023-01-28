@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TOS/Scenes/school_day2.unity
     guid: a083de79908d5ba439409cccd9d1bda0
+  - enabled: 1
+    path: Assets/TOS/Scenes/school_day3.unity
+    guid: 05a7bd1dd6f054c46872b714a861c941
+  - enabled: 1
+    path: Assets/TOS/Scenes/EindUI.unity
+    guid: 98a3337ce1b372646b9ab93dce75477a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
