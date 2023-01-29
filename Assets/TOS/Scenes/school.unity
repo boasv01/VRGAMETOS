@@ -1826,15 +1826,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speaker: {fileID: 1985503406}
-  Clipvraag1: {fileID: 8300000, guid: a288cdf1f4ef612449e76f085bdc1de3, type: 3}
-  Clipvraag2: {fileID: 8300000, guid: 912cf01bafd4f064e8c4484305c0edfc, type: 3}
-  Clipvraag3: {fileID: 8300000, guid: fd80b1c7886bd334aa0987be4c32a538, type: 3}
-  Clipvraag4: {fileID: 0}
-  Clipvraag5: {fileID: 0}
-  Clipvraag6: {fileID: 0}
-  Clipvraag7: {fileID: 0}
-  Clipvraag8: {fileID: 0}
-  Clipvraag9: {fileID: 0}
+  Clipvraag:
+  - {fileID: 8300000, guid: a288cdf1f4ef612449e76f085bdc1de3, type: 3}
+  - {fileID: 8300000, guid: 912cf01bafd4f064e8c4484305c0edfc, type: 3}
 --- !u!4 &287629601
 Transform:
   m_ObjectHideFlags: 0
@@ -6502,7 +6496,6 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 675839500}
   Puntentellingtemp: {fileID: 73009657}
-  Bord: {fileID: 1985503406}
 --- !u!4 &957785388
 Transform:
   m_ObjectHideFlags: 0
