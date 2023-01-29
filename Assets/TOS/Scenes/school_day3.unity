@@ -7131,26 +7131,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: '9. Enkele belangrijke signalen van TOS zijn:'
+  - Question: 'Waarom is logopedische behandeling noodzakelijk bij een leerling met
+      TOS? '
     Answers:
-    - het kind kent weinig woorden
-    - Het kind heeft moeite om op een woord te komen
-    - Het kind is niet goed te verstaan
-    - Alle antwoorden zijn juist
-    correctAnswer: 4
-  - Question: 8. Waar staan de letters TOS voor?
+    - A De logopediste brengt de taalontwikkeling in beeld en stelt een diagnose
+    - B Alle antwoorden zijn juist
+    - C De logopediste geeft professionele behandeling SHV een behandelplan
+    - D Om te adviseren aan ouders en leerkrachten
+    correctAnswer: 1
+  - Question: 'Wat kan een TOS leerling helpen om een verhaal gestructureerd te vertellen? '
     Answers:
-    - Taal op school
-    - Taalontwikkelinststoornis
-    - Thuis op straat
-    - Toets op school
-    correctAnswer: 2
-  - Question: 7. Waarom is het vroeg opsporen van TOS belangrijk?
+    - A Kort de leerling af
+    - B Geef de leerling maar een paar zinnen om te lezen
+    - C Bied structuur in het verhaal door wie wat waar hoe wanneer vragen te stellen
+    - D Verbeter de leerling's antwoorden
+    correctAnswer: 3
+  - Question: 'Hoe lang hebben kinderen extra bedenktijd nodig voordat je je vraag
+      kan herhalen? '
     Answers:
-    - De taal ontwikkeling is tot het 7e levensjaar het sterkst
-    - Dat is handig voor school
-    - lorem ipsum
-    - lorem ipsum
+    - A 10 tellen
+    - B tot de pauze
+    - C Instant
+    - D 5 minuten
     correctAnswer: 1
   options:
   - {fileID: 1709530241}
@@ -7163,8 +7165,8 @@ MonoBehaviour:
   Speaker: {fileID: 815401911}
   Clipvraag:
   - {fileID: 8300000, guid: ddffb4b4a8fab394da07f553ef0f9df0, type: 3}
-  - {fileID: 8300000, guid: 7e69f0c74bed5884782f734d2a31c756, type: 3}
-  - {fileID: 8300000, guid: 6a9aabdf8447a87489545c05571cf851, type: 3}
+  - {fileID: 8300000, guid: dc86c8d9d76512b49ad89eb7b212e900, type: 3}
+  - {fileID: 8300000, guid: fbc660bddf4fbf54bbb181fc6bf9522a, type: 3}
   QuizPanel: {fileID: 1759915567}
   EndPanel: {fileID: 2144707377}
   Result: 0
@@ -7921,7 +7923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1301644664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11666,7 +11668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1623851218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11726,7 +11728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -958, y: 542}
+  m_AnchoredPosition: {x: -879.7, y: 542}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1629980399

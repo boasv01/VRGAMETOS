@@ -3475,7 +3475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &546330463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10623,7 +10623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1452420797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12575,27 +12575,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: 6. Hoe vaak komt een TOS voor?
+  - Question: Wat kan de leerkracht tijdens de instructie doen?
     Answers:
-    - 0.7%
-    - 30%
-    - 5%
-    - 70%
-    correctAnswer: 3
-  - Question: 5. Wat kan de leerkracht doen om een kind met TOS in de klas te helpen?
+    - A Geef een korte instructie
+    - B Activeer de voorkennis
+    - C Bied vooraf de onbekende woorden aan
+    - D Alle antwoorden zijn juist
+    correctAnswer: 4
+  - Question: 'Wat kan de leerkracht doen om het kind in de klas te helpen? '
     Answers:
-    - 0.7%
-    - Visualiseren van de lesstof
-    - 5%
-    - 70%
-    correctAnswer: 3
-  - Question: 4. Wat kan de leerkracht tijdens zijn/haar instructie doen?
-    Answers:
-    - Geef een korte instructie
-    - Deze antwoorden zijn allemaal goed
-    - Activeer de voorkennis
-    - Bied vooraf de onbekende woorden aan
+    - A IN gebarentaal spreken
+    - B Visualiseren van de lesstof
+    - C Luider praten
+    - D Dichterbij de leerling staan
     correctAnswer: 2
+  - Question: Hoe vaak komt een TOS voor?
+    Answers:
+    - A 70%
+    - B 10%
+    - C 5%
+    - D 0,7%
+    correctAnswer: 3
   options:
   - {fileID: 738736771}
   - {fileID: 2140982306}
@@ -12606,9 +12606,9 @@ MonoBehaviour:
   Puntentellingtemp: {fileID: 1452420797}
   Speaker: {fileID: 630591514}
   Clipvraag:
-  - {fileID: 8300000, guid: 740d538b1df02d74ab1086f6dc6d7fb6, type: 3}
-  - {fileID: 8300000, guid: c449c813e97b66648b84f99b54167479, type: 3}
   - {fileID: 8300000, guid: ddffb4b4a8fab394da07f553ef0f9df0, type: 3}
+  - {fileID: 8300000, guid: c449c813e97b66648b84f99b54167479, type: 3}
+  - {fileID: 8300000, guid: 740d538b1df02d74ab1086f6dc6d7fb6, type: 3}
   QuizPanel: {fileID: 1489034651}
   EndPanel: {fileID: 1805884297}
   Result: 0
