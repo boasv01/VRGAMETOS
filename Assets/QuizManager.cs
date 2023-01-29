@@ -8,20 +8,45 @@ public class QuizManager : MonoBehaviour
 {
   public List<QuestionsAndAnswers> QnA;
   public GameObject[] options;
+
   public int currentQuestion = 0;
-  public static int vraagNu = 0;
+  public static int vraagNu = 0; //teller werkt wel maar begint opnieuw als je naar volgende scene gaat, als dit gefixt wordt is de eind ui bijna klaar
+  int totalQuestions = 0;
+
   public Text QuestionTxt;
   public Text Puntentellingtemp;
 
+  public AudioSource Speaker;
+  public AudioClip[] Clipvraag;
+
+  public GameObject QuizPanel;
+  public GameObject EndPanel;
+
+  public int Result;
+
   private void Start()
   {
+    totalQuestions = QnA.Count;
+    QuizPanel.SetActive(true);
+    EndPanel.SetActive(false);
     generateQuestion();
     loadPoints();
   } 
 
+  public void Update(){
+    DecryptVT(); // Just to show what PublicVar.vragenTeller contains (no actual use)
+  }
+
+  public void lastQuest()
+  {
+    QuizPanel.SetActive(false);
+    EndPanel.SetActive(true);
+  }
+
   public void correct()
   {
     QnA.RemoveAt(currentQuestion);
+    PlayAudio(currentQuestion);
     generateQuestion();
   }
 
@@ -46,39 +71,54 @@ public class QuizManager : MonoBehaviour
       for(int i = 0; i < QnA.Count; i++)
       {
         currentQuestion = i;
-        vraagNu = currentQuestion;
-        // SoundManager.getPlayAudio(); lukt niet om audio uit SoundManager te referencen (Audio speelt wel aan het begin)
-      }
 
-    QuestionTxt.text = QnA[currentQuestion].Question;
-    SetAnswers();
+        QuestionTxt.text = QnA[currentQuestion].Question;
+        SetAnswers();
+      }
     }
     else{
       Debug.Log("out of questions");
+      lastQuest();
     }
   }  
 
   public void addPoints()
   {
     PublicVar.score += 1;
-    Puntentellingtemp.text = "Je score is: " + PublicVar.score.ToString() + " van de " + currentQuestion;
+    Puntentellingtemp.text = "Vraagnummer: " + currentQuestion.ToString();
+    EindResultaat.ResultatenLijst[PublicVar.vragenTeller] = 1;
     Debug.Log("goedzo! je score is:" + PublicVar.score);
-    waiter();
+    PublicVar.vragenTeller++;
   }
 
   public void noPoints()
   {
-    Puntentellingtemp.text = "Je score is: " + PublicVar.score.ToString() + " van de " + currentQuestion;
+    Puntentellingtemp.text = "Vraagnummer: " + currentQuestion.ToString();
+    EindResultaat.ResultatenLijst[PublicVar.vragenTeller] = 0;
     Debug.Log("fout antwoord");
-    waiter();
+    PublicVar.vragenTeller++;
   }
 
   public void loadPoints()
   {
-    Puntentellingtemp.text = "Je score is: " + PublicVar.score.ToString() + " van de " + currentQuestion;
+    Puntentellingtemp.text = "Vraagnummer: " + currentQuestion.ToString();
   }
 
-  async static void waiter(){ //Delay werkt nog niet
-    await Task.Delay(2000);
+  public void DecryptVT(){
+    Result = PublicVar.vragenTeller;
+  }
+
+  // async static void waiter(){ //Delay werkt nog niet
+  //   await Task.Delay(2000);
+  // }
+
+  public void PlayAudio(int vraagNummer){
+    if(vraagNummer < 3){
+    Speaker.clip = Clipvraag[vraagNummer];
+    Speaker.PlayOneShot(Speaker.clip); //speelt audio na een vraag
+    }
+    else{
+      Debug.Log("hier is nog geen audiofile voor");
+    }
   }
 }
