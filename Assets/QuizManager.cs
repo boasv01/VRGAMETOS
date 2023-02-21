@@ -82,7 +82,7 @@ void generateQuestion(){
              SetAnswers();
          }
         else
-        {
+        {//als er geen meer vragen
             Debug.Log("No more questions");
             GameOver();
         
