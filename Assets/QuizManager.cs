@@ -72,7 +72,7 @@ void SetAnswers()
 
 }
 
-//laat de vragen door met random manier
+//laat de vragen door met random manier' 
 void generateQuestion(){
 
         if(QnA.Count > 0){ 
