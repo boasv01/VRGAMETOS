@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TOS/school_day2.unity
     guid: a083de79908d5ba439409cccd9d1bda0
+  - enabled: 1
+    path: Assets/TOS/QuizTOS.unity
+    guid: df21528cd20821c43b28320510dcb8e2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
